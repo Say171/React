@@ -1,6 +1,7 @@
+// RadioButtons.js
 import React from 'react';
 
-function RadioButtons({ ukus, setUkus }) {
+function RadioButtons({ ukus, onUnitChange }) {
   return (
     <div>
       <label htmlFor="us">US</label>
@@ -8,14 +9,14 @@ function RadioButtons({ ukus, setUkus }) {
         type="radio"
         value="us"
         checked={ukus === "us"}
-        onChange={() => setUkus("us")}
+        onChange={onUnitChange}
       />
       <label htmlFor="uk">UK</label>
       <input
         type="radio"
         value="uk"
         checked={ukus === "uk"}
-        onChange={() => setUkus("uk")}
+        onChange={onUnitChange}
       />
     </div>
   );

@@ -1,16 +1,18 @@
+// NameInput.js
 import React from 'react';
 
-function CustomNameInput() {
+function NameInput({ customName, onNameChange }) {
   return (
     <div>
       <label htmlFor="customname">Enter custom name:</label>
       <input
         type="text"
         placeholder=""
-        // You may add an onChange handler here to capture the custom name if needed.
+        value={customName}
+        onChange={onNameChange}
       />
     </div>
   );
 }
 
-export default CustomNameInput;
+export default NameInput;
