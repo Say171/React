@@ -29,7 +29,7 @@ export default function StoryGenerator() {
   const [yItem, setYItem] = useState("");
   const [zItem, setZItem] = useState("");
   const [ukus, setUkus] = useState("us");
-  const [customName, setCustomName] = useState("Bob"); // デフォルト名を "Bob" に設定
+  const [customName, setCustomName] = useState(""); // デフォルト名を "Bob" に設定
 
   const nameRef = useRef(customName); // useRefを使用して前回の名前を保持
 
