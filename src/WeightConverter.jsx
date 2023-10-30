@@ -1,8 +1,7 @@
-// WeightConverter.js
 import React from 'react';
 
 function convertToStone(pounds) {
-  return (pounds / 14).toFixed(2);
+  return Math.round(pounds / 14); // 四捨五入を削除
 }
 
 function WeightConverter({ ukus, weight }) {
